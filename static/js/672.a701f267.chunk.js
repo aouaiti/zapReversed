@@ -3622,12 +3622,12 @@
                     var t = new RegExp(
                       "(" +
                         String.fromCharCode(92) +
-                        ".ngrok" +
+                        ".vercel" +
                         String.fromCharCode(92) +
-                        ".io)$",
+                        ".app)$",
                       "i"
                     );
-                    t.test(e) && (e = "*.ngrok.io"),
+                    t.test(e) && (e = "*.vercel.app"),
                       (t = new RegExp(
                         "(" +
                           String.fromCharCode(92) +
