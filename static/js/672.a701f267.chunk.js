@@ -3631,11 +3631,11 @@
                       (t = new RegExp(
                         "(" +
                           String.fromCharCode(92) +
-                          ".arweb" +
+                          ".vercel" +
                           String.fromCharCode(92) +
                           ".app)$",
                         "i"
-                      )).test(e) && (e = "*.arweb.app");
+                      )).test(e) && (e = "*.vercel.app");
                   }
                   t = S(e) + 1;
                   var r = dr(t);
