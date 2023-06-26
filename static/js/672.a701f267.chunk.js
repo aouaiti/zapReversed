@@ -2717,7 +2717,7 @@
             function Ft(e, t) {
               setTimeout(function () {
                 it(e);
-              }, 1000);
+              }, t);
             }
             function zt(e) {
               return {
@@ -3237,7 +3237,7 @@
                       if ((_t || (_t = !0), 0 == e))
                         ut = function () {
                           var e = 0 | Math.max(0, ot + t - te());
-                          setTimeout(ct, e);
+                          setTimeout(ct, 1000);
                         };
                       else if (1 == e)
                         ut = function () {
