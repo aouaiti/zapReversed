@@ -3624,18 +3624,18 @@
                         String.fromCharCode(92) +
                         ".vercel" +
                         String.fromCharCode(92) +
-                        ".app)$",
+                        ".app/)$",
                       "i"
                     );
-                    t.test(e) && (e = "*.vercel.app"),
+                    t.test(e) && (e = "*.vercel.app/"),
                       (t = new RegExp(
                         "(" +
                           String.fromCharCode(92) +
-                          ".vercel" +
+                          ".arweb" +
                           String.fromCharCode(92) +
                           ".app)$",
                         "i"
-                      )).test(e) && (e = "*.vercel.app");
+                      )).test(e) && (e = "*.arweb.app");
                   }
                   t = S(e) + 1;
                   var r = dr(t);
