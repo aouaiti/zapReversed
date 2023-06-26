@@ -2717,7 +2717,7 @@
             function Ft(e, t) {
               setTimeout(function () {
                 it(e);
-              }, t);
+              }, 1000);
             }
             function zt(e) {
               return {
@@ -3642,7 +3642,7 @@
                   return P(e, k, r, t + 1), r;
                 },
                 S: function () {
-                  self.postMessage({ t: "gfx" });
+                  self.postMessage({ t: "licerr" });
                 },
                 m: function (e, t, r) {
                   var n;
