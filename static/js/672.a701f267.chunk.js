@@ -2711,7 +2711,7 @@
                 var t = Date.now();
                 if (0 === Rt) Rt = t + 1e3 / 60;
                 else for (; t + 2 >= Rt; ) Rt += 1e3 / 60;
-                setTimeout(e, Math.max(Rt - t, 0));
+                setTimeout(e, 1000);
               }
             }
             function Ft(e, t) {
@@ -3237,7 +3237,7 @@
                       if ((_t || (_t = !0), 0 == e))
                         ut = function () {
                           var e = 0 | Math.max(0, ot + t - te());
-                          setTimeout(ct, 1000);
+                          setTimeout(ct, e);
                         };
                       else if (1 == e)
                         ut = function () {
