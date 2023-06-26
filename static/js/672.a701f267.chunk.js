@@ -2711,13 +2711,13 @@
                 var t = Date.now();
                 if (0 === Rt) Rt = t + 1e3 / 60;
                 else for (; t + 2 >= Rt; ) Rt += 1e3 / 60;
-                setTimeout(e, 1000);
+                setTimeout(e, Math.max(Rt - t, 0));
               }
             }
             function Ft(e, t) {
               setTimeout(function () {
                 it(e);
-              }, t);
+              }, 1000);
             }
             function zt(e) {
               return {
@@ -3237,7 +3237,7 @@
                       if ((_t || (_t = !0), 0 == e))
                         ut = function () {
                           var e = 0 | Math.max(0, ot + t - te());
-                          setTimeout(ct, e);
+                          setTimeout(ct, 1000);
                         };
                       else if (1 == e)
                         ut = function () {
